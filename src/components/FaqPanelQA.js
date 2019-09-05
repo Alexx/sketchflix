@@ -21,8 +21,8 @@ var myAnswer = {
   marginLeft: 'auto',
   marginRight: 'auto',
   textAlign: 'left',
-  marginBottom: '15px',
-  padding: '10px'
+  marginBottom: '10px',
+  padding: '.8em 1em'
 }
 
 export default class FaqPanelQA extends Component {
@@ -43,7 +43,7 @@ export default class FaqPanelQA extends Component {
 render() {
   return(
     <div>
-    <button style={myButton}
+    <button className="faq-question" style={myButton}
     onClick={() => this.handleClick()}
     >
     {this.props.question}

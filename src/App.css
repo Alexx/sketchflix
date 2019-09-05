@@ -15,6 +15,11 @@ img {
     border: 3px solid #4a4a4a;
 }
 
+.landing-background{
+  position: absolute;
+  z-index: 0;
+}
+
 video.tv-video {
   position: absolute;
   width: 73%;
@@ -48,6 +53,69 @@ video.multi-video {
 
 .App-link {
   color: #61dafb;
+}
+
+.timeline-labels {
+  position: relative;
+  top: 1.2rem;
+  right: 3.5rem;
+}
+
+.timeline-labels div {
+  display: inline-block;
+}
+
+.billing-text span {
+  display: block;
+}
+
+div.free-trial-text {
+  position: relative;
+  font-size: 26px;
+  color: #00d65f;
+  font-weight: 600;
+  float: left;
+  left: 5rem;
+  top: 2.5rem;
+}
+
+div.billing-text {
+  text-align: center;
+}
+
+span.bill-label {
+  color: #8c8c8c;
+  font-size: 26px;
+}
+
+span.bill-date {
+  font-size: 26px;
+}
+
+div.second-bill-date {
+  position: relative;
+  font-size: 26px;
+  float: right;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+div.end-bar {
+  font-size: 26px;
+  font-weight: 400;
+  margin-left: 3rem;
+}
+
+div.end-bar::after {
+  content: '';
+  position: absolute;
+  top: 10.06em;
+  left: 44%;
+  width: 8px;
+  height: 2.5em;
+  background-color: #d8d8d8;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
 }
 
 .multi-panel {
@@ -115,6 +183,10 @@ img.devices {
   height: 3em;
   width: 3em;
   margin-left: 1.6rem;
+}
+
+.faq-question {
+  padding: 0.8em 2.2em 2.3em 1.2em;
 }
 
 @keyframes App-logo-spin {

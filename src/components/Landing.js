@@ -1,6 +1,8 @@
 import React from 'react';
 import LandingText from './LandingText'
 import TrialButton from './TrialButton'
+import { Image } from 'react-bootstrap'
+import bg from  './../img/hero-background.jpg'
 
 function Landing () {
   var textStyle = {
@@ -9,10 +11,10 @@ function Landing () {
   }
   return(
     <div>
-    <div style={textStyle}>
-    <LandingText />
-    </div>
-    <TrialButton/>
+      <div style={textStyle}>
+        <LandingText />
+      </div>
+      <TrialButton/>
     </div>
   );
 }

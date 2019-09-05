@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
     <UserNav/>
-    <Container>
+    <Container className="landing">
 
     <Row>
       <Col md={12}>
