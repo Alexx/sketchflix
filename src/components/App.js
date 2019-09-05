@@ -29,7 +29,7 @@ function App() {
     </Container>
 
     <hr/>
-    <Container>
+    <Container className="tv-panel">
     <Row>
       <Col md={6}>
         <TvPanel/>
@@ -56,7 +56,7 @@ function App() {
     <hr/>
 
 
-    <Container>
+    <Container className="multi-panel">
     <Row>
       <Col md={6}>
       <MultiPanel/>

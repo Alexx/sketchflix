@@ -1,16 +1,26 @@
 import React from 'react';
 import { Image } from 'react-bootstrap'
-import MultiImage from '../img/multi.png'
+import MultiImage from '../img/device-pile.png'
+import video from '../img/video-devices.m4v'
+
 
 function MultiPanelImage(){
   var myStyle = {
-    height: '250px',
-    width: '400px',
+    height: 'auto',
+    width: '100%',
     float: 'right',
-    marginTop: '85px'
+    marginTop: '85px',
+    zIndex: '3'
   }
   return (
-    <Image style={myStyle} src={MultiImage} rounded />
+    <div>
+      <Image className="devices" style={myStyle} src={MultiImage} rounded />
+      <div className="tv">
+        <video className="multi-video" autoPlay playsInline muted loop>
+          <source src={video} type="video/mp4" />
+        </video>
+      </div>
+    </div>
   );
 }
 
