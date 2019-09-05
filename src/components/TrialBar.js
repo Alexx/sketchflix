@@ -1,6 +1,8 @@
 import React from 'react';
 import { ProgressBar } from 'react-bootstrap'
 
+var nowPlus30Days = new Date(Date.now() + (30 * 24 * 60 * 60 * 1000));
+
 
 function TrialBar(){
   var myStyle = {
@@ -16,7 +18,7 @@ function TrialBar(){
         </div>
         <div className="billing-text">
           <span className="bill-label">FIRST BILL</span>
-          <span className="bill-date">10/5</span>
+          <span className="bill-date">{nowPlus30Days.getMonth() + 1}/{nowPlus30Days.getDay() - 1}</span>
         </div>
         <div className="second-bill-date">
           11/5
